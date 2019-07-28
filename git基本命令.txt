@@ -8,6 +8,7 @@ git add . //添加所有文件到队列中
 git rm --cached index.html  从队列中删除一个文件
 git status //查看状态
 git commit //提交 
+git commit -m '备注' //简写一个
 git push //推送到仓库
 git pull //从远程仓库拉取数据
 git clone //从远程仓库拷贝数据
