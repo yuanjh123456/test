@@ -1,0 +1,30 @@
+免密钥登陆其实就是配置ssh
+配置本地的ssh
+（1）.ssh-keygen -t rsa -C 邮箱
+（2）一直回车  直到出现如图，算成功，配置好的ssh文件已经放到c:/用户/名字/.ssh文件夹中
++---[RSA 2048]----+
+|            .    |
+|        .  . .   |
+|     . . .  +   o|
+|      E   o+.o ==|
+|       oS ooo.BoB|
+|         . =...X+|
+|          . o.+=*|
+|           +.=** |
+|          .oB=+oo|
++----[SHA256]-----+
+把本地的ssh放到远程仓库上去
+（1）github---小图标----setting---左面有个ssh and gpg keys----new ssh key
+（2）title随便起    key中输入本地生成的ssh,也就是刚才的文件夹的（id_rsa.pub）
+（3）打开id_rsa.pub后复制里面的代码粘贴到key里面
+
+测试通信的连通性：
+(1)ssh -T git@github.com       
+(2)yes
+出现successful 并且在那个文件夹里面有known_hosts.则说明成功，已经可以远程通信。
+如果失败，就多试几次，可能是回车或者空格，或者网络的原因。
+
+
+
+
+

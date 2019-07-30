@@ -1,0 +1,2 @@
+先在github上面新建一个项目   然后复制他的地址（地址可以是http或者是ssh）
+git remote add origin 地址. 

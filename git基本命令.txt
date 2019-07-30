@@ -1,16 +1,18 @@
 git --version //查看是不是安装好git 及版本号
 git init //初始化本地git仓库
 touch 文件名 //创建文件
+//必须配置  要不然别人找不到你
 git config --global user.name '名称' //配置全局的用户名
-git add 文件  //添加文件到队列中
+git config --global user.email '邮箱'  //配置全局的邮箱
+git add 文件  //添加文件到暂存区中
 git add *.html //添加所有html文件到队列中
 git add . //添加所有文件到队列中
 git rm --cached index.html  从队列中删除一个文件
 git status //查看状态
-git commit //提交 
+git commit //将暂存区中的文件提交到本地仓库（本地分支，默认为master分支）
 git commit -m '备注' //简写一个
-git push //推送到仓库
-git pull //从远程仓库拉取数据
+git push //将本地仓库的内容推送到远程仓库
+git pull //将远程仓库的文件拉取到本地仓库
 git clone //从远程仓库拷贝数据
 
 
